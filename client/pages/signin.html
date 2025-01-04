@@ -39,33 +39,19 @@
             <div class="card bg-dark text-white" style="border-radius: 1rem">
               <div class="card-body p-5 text-center">
                 <div class="mb-md-2 mt-md-1">
-                  <h2 class="fw-bold mb-2 text-uppercase">Sign Up</h2>
+                  <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                   <p class="text-white-50 mb-4">
-                    Please enter Email and password!
+                    Please enter your login and password!
                   </p>
 
-                  <form method="post" id="registrationForm">
+                  <form method="post" id="loginForm">
                     <div
                       data-mdb-input-init
-                      class="form-outline form-white mb-2"
-                    >
-                      <input
-                        type="text"
-                        id="typenameX"
-                        class="form-control form-control-lg"
-                        name="name"
-                      />
-                      <label class="form-label" for="typenameX"
-                        >Name</label
-                      >
-                    </div>
-                    <div
-                      data-mdb-input-init
-                      class="form-outline form-white mb-2"
+                      class="form-outline form-white mb-4"
                     >
                       <input
                         type="email"
-                        id="typeEmailX"
+                        id="typeEmail"
                         class="form-control form-control-lg"
                         name="email"
                       />
@@ -74,11 +60,11 @@
 
                     <div
                       data-mdb-input-init
-                      class="form-outline form-white mb-2"
+                      class="form-outline form-white mb-4"
                     >
                       <input
                         type="password"
-                        id="typePasswordX"
+                        id="typePassword"
                         class="form-control form-control-lg"
                         name="password"
                       />
@@ -87,22 +73,21 @@
                       >
                     </div>
 
-
                     <button
                       data-mdb-button-init
                       data-mdb-ripple-init
                       class="btn btn-outline-light btn-lg px-5"
                       type="submit"
                     >
-                      Sign Up
+                      Login
                     </button>
                   </form>
                 </div>
 
                 <div>
                   <p class="mb-0">
-                    Do you have an account?
-                    <a href="./signin.html" class="text-white-50 fw-bold">Login</a>
+                    Don't have an account?
+                    <a href="./signup.html" class="text-white-50 fw-bold">Sign Up</a>
                   </p>
                 </div>
               </div>
@@ -112,5 +97,6 @@
       </div>
     </section>
     <script src="../app.js"></script>
+    <script src="../config.js"></script>
   </body>
 </html>

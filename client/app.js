@@ -10,7 +10,7 @@ if (document.getElementById('registrationForm')) {
 
     // Send POST request to backend
     try {
-      const response = await fetch('http://localhost:3000/signup', {
+      const response = await fetch(`${config.BASE_URL}/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ if (document.getElementById('loginForm')) {
 
     try {
       // Send POST request to server for authentication
-      const response = await fetch('http://localhost:3000/signin', {
+      const response = await fetch(`${config.BASE_URL}/signin`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

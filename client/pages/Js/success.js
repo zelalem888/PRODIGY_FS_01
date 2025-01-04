@@ -9,7 +9,7 @@ async function fetchProtectedData() {
   }
 
   try {
-    const response = await fetch('http://localhost:3000/protected-route', {
+    const response = await fetch(`${config.BASE_URL}/protected-route`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
