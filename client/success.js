@@ -4,7 +4,7 @@ async function fetchProtectedData() {
 
   if (!token) {
     alert('Unauthorized! Please login first.');
-    window.location.href = './signin.html'; // Redirect to login page
+    window.location.href = './index.html'; // Redirect to login page
     return;
   }
 
@@ -35,7 +35,7 @@ async function fetchProtectedData() {
 function logout() {
   localStorage.removeItem('token'); // Remove token from local storage
   alert('You have been logged out!');
-  window.location.href = './signin.html'; // Redirect to login page
+  window.location.href = './index.html'; // Redirect to login page
 }
 
 // Attach logout button event listener
