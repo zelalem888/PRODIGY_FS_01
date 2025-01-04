@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "client/pages/signin.html", 
+      "src": "pages/signin.html", 
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)", 
-      "dest": "/client/pages/signin.html"
+      "dest": "pages/signin.html"
     }
   ]
 }
